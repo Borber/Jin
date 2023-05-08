@@ -1,0 +1,18 @@
+[package]
+name = "jin"
+keywords = ["javascript", "js", "compiler", "lexer", "parser"]
+authors = ["Borber"]
+edition = "2021"
+description = "Run javascript"
+version = "0.1.1"
+
+
+[dependencies]
+boa_engine = "0.16"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
