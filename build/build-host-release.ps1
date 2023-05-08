@@ -42,10 +42,6 @@ Write-Host $PackagePath
 
 Push-Location "${PSScriptRoot}\..\target\release"
 
-choco install upx
-
-upx --ultra-brute  jin.exe
-
 $ProgressPreference = "SilentlyContinue"
 New-Item "${PackageReleasePath}" -ItemType Directory -ErrorAction SilentlyContinue
 $CompressParam = @{
