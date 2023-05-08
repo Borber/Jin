@@ -1,6 +1,10 @@
-# Jin
+# Jin [EN](README_EN.md)
 
 运行 js 代码
+
+## 下载
+
+[Release](https://github.com/Borber/Jin/releases/latest) 下载对应你的系统的压缩包
 
 ## 使用
 
