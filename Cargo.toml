@@ -4,7 +4,7 @@ keywords = ["javascript", "js", "compiler", "lexer", "parser"]
 authors = ["Borber"]
 edition = "2021"
 description = "Run javascript"
-version = "0.1.1"
+version = "0.1.2"
 
 
 [dependencies]

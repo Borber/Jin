@@ -1,6 +1,5 @@
-use std::{env, path::Path};
-
 use boa_engine::Context;
+use std::{env, path::Path};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -21,6 +20,6 @@ fn main() {
 
     match context.eval(code) {
         Ok(result) => println!("{}", result.display()),
-        Err(e) => println!("\n{}", e.display()),
+        Err(e) => println!("{}", e.display()),
     }
 }
