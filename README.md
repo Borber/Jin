@@ -1,4 +1,7 @@
-# Jin [EN](README_EN.md)
+# Jin [![Crate Downloads]][Release] [EN](README_EN.md)
+
+[Crate Downloads]: https://img.shields.io/github/downloads/Borber/Jin/total.svg?style=for-the-badge&labelColor=fff000&color=82E0AA
+[Release]: https://github.com/Borber/Jin/releases/latest
 
 运行 js 代码
 
