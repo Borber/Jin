@@ -1,4 +1,4 @@
-use boa_engine::Context;
+use boa_engine::{Context, Source};
 use std::{env, path::Path};
 
 fn main() {
@@ -18,8 +18,10 @@ fn main() {
         arg
     };
 
-    match context.eval(code) {
+    let source = Source::from_bytes(&code);
+
+    match context.eval(source) {
         Ok(result) => println!("{}", result.display()),
-        Err(e) => println!("{}", e.display()),
+        Err(e) => println!("{}", e.to_string()),
     }
 }
