@@ -22,6 +22,6 @@ fn main() {
 
     match context.eval(source) {
         Ok(result) => println!("{}", result.display()),
-        Err(e) => println!("{}", e.to_string()),
+        Err(e) => println!("{e}"),
     }
 }
